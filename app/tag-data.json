@@ -1,1 +1,12 @@
-{ "database": 1, "python": 1, "AI/ML": 1, "sql": 1, "data-patterns": 2, "data-visualization": 1 }
+{
+  "nestjs": 1,
+  "typescript": 1,
+  "javascript": 1,
+  "design-patterns": 2,
+  "database": 1,
+  "machine-learning": 1,
+  "algorithms": 1,
+  "data-science": 1,
+  "python": 1,
+  "application": 1
+}
