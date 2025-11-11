@@ -8,8 +8,8 @@ const Greeting = () => {
 
   return (
     <div className={className}>
-      Hello, I'm a Data Scientist!{' '}
-      <span className="font-bold">Transforming data into insights and building ML solutions.</span>
+Hello, folks!{' '}
+      <span className="font-bold">Find my stories and creative ideas.t>
     </div>
   );
 };
