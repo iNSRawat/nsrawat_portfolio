@@ -2,39 +2,39 @@ import { BrandIconType } from '@/components/ui/BrandIcon';
 
 type PopularTag = {
   href: string;
-  iconType: BrandIconType;
+  iconType: BrandIconType; // Must match your available icon keys
   slug: string;
   title: string;
 };
 
 const popularTags: PopularTag[] = [
   {
-    href: '/tags/javascript',
-    iconType: 'Javascript',
-    slug: 'javascript',
-    title: 'Javascript',
+    href: '/tags/python',
+    iconType: 'Python', // Make sure 'Python' icon exists!
+    slug: 'python',
+    title: 'Python',
   },
   {
-    href: '/tags/typescript',
-    iconType: 'Typescript',
-    slug: 'typescript',
-    title: 'Typescript',
+    href: '/tags/sql',
+    iconType: 'SQL', // Ensure an 'SQL' icon exists
+    slug: 'sql',
+    title: 'SQL',
   },
   {
-    href: '/tags/nestjs',
-    iconType: 'NestJS',
-    slug: 'nestjs',
-    title: 'NestJS',
+    href: '/tags/nlp',
+    iconType: 'NLP', // Ensure an 'NLP' icon exists
+    slug: 'nlp',
+    title: 'NLP',
   },
   {
-    href: '/tags/react',
-    iconType: 'React',
-    slug: 'react',
-    title: 'React',
+    href: '/tags/numpy',
+    iconType: 'NumPy', // Use lowercase 'numpy' for slug
+    slug: 'numpy',
+    title: 'NumPy',
   },
   {
     href: '/tags/database',
-    iconType: 'Mongodb',
+    iconType: 'Mongodb', // Already included and matches your icon set
     slug: 'database',
     title: 'Database',
   },

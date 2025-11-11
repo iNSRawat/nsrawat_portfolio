@@ -1,9 +1,9 @@
 const ShortDescription = () => {
   return (
     <div className="mb-4 mt-4">
-      <p>I started learning to code in 2019 when I started college.</p>
-      <p>I landed my first job as a Back-end Developer in 2021.</p>
-      <p>I have a passion for JavaScript/Typescript and website development.</p>
+      <p>After 5 years in Digital Marketing, I began my Data Science journey in Sep 2025 to shift my career.</p>
+      <p>Currently, I’m building skills in Python, machine learning, and data analysis for my new path.</p>
+      <p>I have a passion for Python, machine learning, and data science projects</p>
       <p>I started this blog to practice my skill and share my knowledge.</p>
     </div>
   );
