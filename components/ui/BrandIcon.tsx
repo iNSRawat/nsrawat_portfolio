@@ -23,6 +23,7 @@ import Python from 'public/static/icons/python.svg';
 import SQL from 'public/static/icons/sql.svg';
 import NLP from 'public/static/icons/nlp.svg';
 import NumPy from 'public/static/icons/numpy.svg';
+import Pandas from 'public/static/icons/pandas.svg';
 
 export const BrandIconsMap = {
   React,
@@ -50,6 +51,7 @@ export const BrandIconsMap = {
   SQL,
   NLP,
   NumPy,
+    Pandas,
 };
 
 export type BrandIconType = keyof typeof BrandIconsMap;
