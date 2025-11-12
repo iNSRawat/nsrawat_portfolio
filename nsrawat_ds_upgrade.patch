@@ -1,0 +1,426 @@
+*** Begin Patch
+*** Add File: package.json
++{
++  "name": "nsrawat-portfolio",
++  "version": "1.0.0",
++  "private": true,
++  "scripts": {
++    "dev": "next dev",
++    "build": "next build && contentlayer build",
++    "start": "next start",
++    "lint": "biome check",
++    "format": "biome format"
++  },
++  "dependencies": {
++    "next": "15.0.0",
++    "react": "19.0.0",
++    "react-dom": "19.0.0",
++    "contentlayer": "^0.8.0",
++    "@contentlayer/source-files": "^0.8.0",
++    "next-contentlayer": "^0.1.0",
++    "remark-gfm": "^3.0.1",
++    "rehype-slug": "^5.0.0"
++  },
++  "devDependencies": {
++    "typescript": "^5.5.0",
++    "tailwindcss": "^4.0.0",
++    "postcss": "^8.4.0",
++    "autoprefixer": "^10.4.0",
++    "biome": "^1.0.0"
++  }
++}
++
+*** End Patch
+*** Begin Patch
+*** Add File: next.config.js
++/** @type {import('next').NextConfig} */
++const nextConfig = {
++  experimental: { appDir: true },
++  reactStrictMode: true,
++  images: { unoptimized: true }
++}
++module.exports = nextConfig;
++
+*** End Patch
+*** Begin Patch
+*** Add File: tsconfig.json
++{
++  "compilerOptions": {
++    "target": "ES2022",
++    "lib": ["DOM", "ESNext"],
++    "module": "ESNext",
++    "moduleResolution": "bundler",
++    "jsx": "preserve",
++    "strict": true,
++    "esModuleInterop": true,
++    "skipLibCheck": true,
++    "forceConsistentCasingInFileNames": true,
++    "resolveJsonModule": true,
++    "isolatedModules": true,
++    "noEmit": true
++  },
++  "exclude": ["node_modules", ".next", "dist"]
++}
++
+*** End Patch
+*** Begin Patch
+*** Add File: tailwind.config.cjs
++module.exports = {
++  content: ['./app/**/*.{ts,tsx,mdx}', './components/**/*.{ts,tsx,mdx}', './content/**/*.{md,mdx}', './pages/**/*.{ts,tsx,js,jsx}'],
++  theme: {
++    extend: {
++      colors: {
++        'github-dark-dimmed-900': '#0d1117',
++        'github-dark-dimmed-800': '#0f1724',
++        accent: '#667eea'
++      }
++    }
++  },
++  plugins: []
++};
++
+*** End Patch
+*** Begin Patch
+*** Add File: postcss.config.cjs
++module.exports = {
++  plugins: {
++    tailwindcss: {},
++    autoprefixer: {}
++  }
++};
++
+*** End Patch
+*** Begin Patch
+*** Add File: contentlayer.config.ts
++import { defineDocumentType, makeSource } from 'contentlayer/source-files'
++
++export const Project = defineDocumentType(() => ({
++  name: 'Project',
++  filePathPattern: 'projects/*.mdx',
++  fields: {
++    title: { type: 'string', required: true },
++    date: { type: 'date', required: true },
++    tags: { type: 'list', of: { type: 'string' } },
++    description: { type: 'string', required: true }
++  },
++  computedFields: {
++    slug: { type: 'string', resolve: doc => doc._raw.sourceFileName.replace(/\\.mdx$/, '') }
++  }
++}))
++
++export const Snippet = defineDocumentType(() => ({
++  name: 'Snippet',
++  filePathPattern: 'snippets/*.mdx',
++  fields: {
++    title: { type: 'string', required: true },
++    date: { type: 'date', required: true },
++    tags: { type: 'list', of: { type: 'string' } },
++    description: { type: 'string', required: true }
++  },
++  computedFields: {
++    slug: { type: 'string', resolve: doc => doc._raw.sourceFileName.replace(/\\.mdx$/, '') }
++  }
++}))
++
++export default makeSource({
++  contentDirPath: 'content',
++  documentTypes: [Project, Snippet]
++})
++
+*** End Patch
+*** Begin Patch
+*** Add File: .biomerc.json
++{
++  "formatter": {
++    "enabled": true
++  },
++  "linter": {
++    "enabled": true
++  }
++}
++
+*** End Patch
+*** Begin Patch
+*** Add File: app/layout.tsx
++import './globals.css'
++import type { ReactNode } from 'react'
++
++export const metadata = {
++  title: 'N S Rawat — Data Science | Portfolio',
++  description: 'Data Science portfolio, snippets and projects by N S Rawat'
++}
++
++export default function RootLayout({ children }: { children: ReactNode }) {
++  return (
++    <html lang="en">
++      <body className="bg-white text-slate-900">
++        <header className="w-full border-b">
++          <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
++            <div>
++              <div className="text-lg font-bold">N S Rawat</div>
++              <div className="text-xs text-slate-500">Data Scientist | AI/ML Enthusiast</div>
++            </div>
++            <nav className="flex gap-4">
++              <a href="#projects" className="text-sm">Projects</a>
++              <a href="#snippets" className="text-sm">Snippets</a>
++              <a href="#about" className="text-sm">About</a>
++              <a href="#contact" className="text-sm">Contact</a>
++            </nav>
++          </div>
++        </header>
++        <main>{children}</main>
++        <footer className="border-t mt-12">
++          <div className="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-600">
++            © {new Date().getFullYear()} N S Rawat • Built with Next.js, Tailwind & Contentlayer
++          </div>
++        </footer>
++      </body>
++    </html>
++  )
++}
++
+*** End Patch
+*** Begin Patch
+*** Add File: app/globals.css
++@tailwind base;
++@tailwind components;
++@tailwind utilities;
++
++:root {
++  --bg: #ffffff;
++  --muted: #64748b;
++  --accent: #667eea;
++}
++
++@media (prefers-color-scheme: dark) {
++  :root {
++    --bg: #0f1724;
++    --muted: #94a3b8;
++  }
++}
++
++body {
++  background: var(--bg);
++  -webkit-font-smoothing: antialiased;
++  -moz-osx-font-smoothing: grayscale;
++}
++
++.prose pre { background: #0b1220; color: #e6eef8; padding: 1rem; border-radius: 0.5rem; overflow:auto; }
++
+*** End Patch
+*** Begin Patch
+*** Add File: app/page.tsx
++import { allProjects, allSnippets } from 'contentlayer/generated'
++import Link from 'next/link'
++
++export default function Page() {
++  return (
++    <div className="max-w-6xl mx-auto px-6 py-12">
++      <section className="mb-12">
++        <h1 className="text-4xl font-extrabold mb-4">N S Rawat — Data Science</h1>
++        <p className="text-slate-600">Applied machine learning, visualizations, and reproducible data science recipes.</p>
++      </section>
++
++      <section id="tech" className="mb-12">
++        <h2 className="text-2xl font-bold mb-4">Tech Stack</h2>
++        <div className="flex flex-wrap gap-3">
++          <span className="px-3 py-1 rounded-full bg-[#3776AB] text-white font-semibold">Python</span>
++          <span className="px-3 py-1 rounded-full bg-[#4D77CF] text-white font-semibold">NumPy</span>
++          <span className="px-3 py-1 rounded-full bg-[#150458] text-white font-semibold">Pandas</span>
++          <span className="px-3 py-1 rounded-full bg-[#EE4C2C] text-white font-semibold">PyTorch</span>
++          <span className="px-3 py-1 rounded-full bg-[#FF6F00] text-white font-semibold">TensorFlow</span>
++          <span className="px-3 py-1 rounded-full bg-[#F7931E] text-white font-semibold">scikit-learn</span>
++          <span className="px-3 py-1 rounded-full bg-[#F37626] text-white font-semibold">Jupyter</span>
++          <span className="px-3 py-1 rounded-full bg-[#217346] text-white font-semibold">Excel</span>
++        </div>
++      </section>
++
++      <section id="projects" className="mb-12">
++        <h2 className="text-2xl font-bold mb-4">Projects</h2>
++        <div className="grid md:grid-cols-2 gap-6">
++          {allProjects.map(p => (
++            <article key={p.slug} className="p-5 border rounded-lg">
++              <h3 className="font-semibold text-lg">{p.title}</h3>
++              <p className="text-slate-600 text-sm mb-3">{p.description}</p>
++              <div className="flex gap-2 flex-wrap">
++                {p.tags.map(t => <span key={t} className="text-xs px-2 py-1 bg-slate-100 rounded">{t}</span>)}
++              </div>
++              <Link href={`/projects/${p.slug}`} className="text-sm text-accent mt-3 inline-block">Read</Link>
++            </article>
++          ))}
++        </div>
++      </section>
++
++      <section id="snippets" className="mb-12">
++        <h2 className="text-2xl font-bold mb-4">Snippets & Recipes</h2>
++        <div className="grid md:grid-cols-2 gap-6">
++          {allSnippets.map(s => (
++            <article key={s.slug} className="p-5 border rounded-lg">
++              <h3 className="font-semibold text-lg">{s.title}</h3>
++              <p className="text-slate-600 text-sm mb-3">{s.description}</p>
++              <div className="flex gap-2 flex-wrap">
++                {s.tags.map(t => <span key={t} className="text-xs px-2 py-1 bg-slate-100 rounded">{t}</span>)}
++              </div>
++              <Link href={`/snippets/${s.slug}`} className="text-sm text-accent mt-3 inline-block">Open</Link>
++            </article>
++          ))}
++        </div>
++      </section>
++
++      <section id="about" className="mb-12">
++        <h2 className="text-2xl font-bold mb-4">About</h2>
++        <p className="text-slate-600">I focus on applied data science: model building, explainability, MLOps, and visualization. I publish notebooks, recipes and open-source tooling.</p>
++      </section>
++
++      <section id="contact" className="mb-12">
++        <h2 className="text-2xl font-bold mb-4">Contact</h2>
++        <p className="text-slate-600">Email: <a href="mailto:nsrawat@zohomail.in" className="text-accent">nsrawat@zohomail.in</a></p>
++      </section>
++    </div>
++  )
++}
++
+*** End Patch
+*** Begin Patch
+*** Add File: app/projects/[slug]/page.tsx
++import { allProjects } from 'contentlayer/generated'
++import { notFound } from 'next/navigation'
++import { useMDXComponent } from 'next-contentlayer/hooks'
++
++export async function generateStaticParams() {
++  return allProjects.map(p => ({ slug: p.slug }))
++}
++
++export default function ProjectPage({ params }: { params: { slug: string } }) {
++  const project = allProjects.find(p => p.slug === params.slug)
++  if (!project) return notFound()
++  const MDXContent = useMDXComponent(project.body.code)
++  return (
++    <div className="max-w-3xl mx-auto px-6 py-10">
++      <h1 className="text-3xl font-bold mb-3">{project.title}</h1>
++      <p className="text-slate-600 mb-6">{project.description}</p>
++      <div className="prose">
++        <MDXContent />
++      </div>
++    </div>
++  )
++}
++
+*** End Patch
+*** Begin Patch
+*** Add File: app/snippets/[slug]/page.tsx
++import { allSnippets } from 'contentlayer/generated'
++import { notFound } from 'next/navigation'
++import { useMDXComponent } from 'next-contentlayer/hooks'
++
++export async function generateStaticParams() {
++  return allSnippets.map(p => ({ slug: p.slug }))
++}
++
++export default function SnippetPage({ params }: { params: { slug: string } }) {
++  const snippet = allSnippets.find(s => s.slug === params.slug)
++  if (!snippet) return notFound()
++  const MDXContent = useMDXComponent(snippet.body.code)
++  return (
++    <div className="max-w-3xl mx-auto px-6 py-10">
++      <h1 className="text-2xl font-bold mb-3">{snippet.title}</h1>
++      <p className="text-slate-600 mb-6">{snippet.description}</p>
++      <div className="prose">
++        <MDXContent />
++      </div>
++    </div>
++  )
++}
++
+*** End Patch
+*** Begin Patch
+*** Add File: content/projects/pca-visualization.mdx
++---
++title: "PCA Visualization for High-Dim Feature Sets"
++date: "2024-10-01"
++tags: ["PCA", "Visualization", "Dimensionality Reduction"]
++description: "Interactive pipeline and plotting for PCA on large tabular datasets."
++---
++
++## Overview
++
++This project demonstrates PCA on a 100-feature synthetic dataset, pipeline with scaling, and visualization of explained variance.
++
++```python
++# sample pipeline snippet
++from sklearn.decomposition import PCA
++from sklearn.preprocessing import StandardScaler
++scaler = StandardScaler()
++Xs = scaler.fit_transform(X)
++pca = PCA(n_components=10)
++Z = pca.fit_transform(Xs)
++```
++
+*** End Patch
+*** Begin Patch
+*** Add File: content/projects/cnn-transfer-learning.mdx
++---
++title: "Transfer Learning for Medical Imaging (ResNet)"
++date: "2024-08-10"
++tags: ["Deep Learning", "Transfer Learning", "PyTorch"]
++description: "Fine-tune ResNet for binary classification with best practices for data augmentation."
++---
++
++## Summary
++
++- Dataset: Chest X-ray subset
++- Framework: PyTorch
++- Approach: Pretrained ResNet50, freeze base, fine-tune classifier head
++
+*** End Patch
+*** Begin Patch
+*** Add File: content/snippets/train-val-split.mdx
++---
++title: "Quick: Reproducible Train/Validation Split"
++date: "2024-07-11"
++tags: ["scikit-learn", "dataset", "best-practice"]
++description: "Deterministic split with stratification for classification."
++---
++
++```python
++from sklearn.model_selection import train_test_split
++X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
++```
++
+*** End Patch
+*** Begin Patch
+*** Add File: content/snippets/feature-scaling.mdx
++---
++title: "Feature Scaling Recipes"
++date: "2024-07-19"
++tags: ["preprocessing", "scaling"]
++description: "When to use StandardScaler, MinMax, or RobustScaler."
++---
++
++- StandardScaler for most models.
++- MinMax for neural nets expecting bounded inputs.
++- RobustScaler for data with outliers.
++
+*** End Patch
+*** Begin Patch
+*** Add File: README.md
++# nsrawat-portfolio
++
++This repo is a Next.js (App Router) + TypeScript + Tailwind portfolio with Contentlayer for MDX content (projects & snippets). Content is Data Science focused.
++
++## Local dev
++
++1. `pnpm install` or `npm install`
++2. `npm run dev`
++3. Open `http://localhost:3000`
++
++## Build
++`npm run build` (Contentlayer build runs during build)
++
++## Deploy to Vercel
++- Project root build command: `npm run build`
++- Output directory: (leave blank — Next.js auto)
++- Vercel will detect Next and deploy automatically.
++
+*** End Patch
+*** End Patch
