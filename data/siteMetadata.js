@@ -8,7 +8,7 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system',
   siteUrl: 'https://nsrawat-ds.vercel.app',
-  analyticsURL: 'https://analytics.nsrawat-ds.vercel.app/share/7INnZc4Dv9KbGumx/nsrawat.vercel.app',
+  analyticsURL: 'https://analytics.nsrawat-ds.vercel.app/share/7INnZc4Dv9KbGumx/nsrawat-ds.vercel.app',
   siteRepo: 'https://github.com/iNSRawat/nsrawat_portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
