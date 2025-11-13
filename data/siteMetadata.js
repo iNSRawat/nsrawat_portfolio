@@ -31,8 +31,7 @@ const siteMetadata = {
   },
   analytics: {
     umamiAnalytics: {
-      umamiWebsiteId: '6085a804-42f1-44e8-b1c2-7d8f2a2ac5e3',
-    },
+      umamiWebsiteId: process.env.UMAMI_WEBSITE_ID,    },
   },
   newsletter: {
     provider: 'buttondown',
