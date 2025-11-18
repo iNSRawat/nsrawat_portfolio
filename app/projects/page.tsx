@@ -1,4 +1,4 @@
-import { genPageMetadata } from 'app/seo';
+import { genPageMetadata } from '@/app/seo';
 
 import projectsData from '@/data/projectsData';
 import { fetchRepoData } from '@/servers/github.server';
