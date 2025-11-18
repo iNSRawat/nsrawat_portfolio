@@ -4,7 +4,7 @@
 import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
 
-import { useBlogStats, useUpdateBlogStats } from 'hooks';
+import { useBlogStats, useUpdateBlogStats } from '@/hooks';
 
 import { Stats, StatsType } from '@prisma/client';
 
