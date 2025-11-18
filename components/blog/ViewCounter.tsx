@@ -3,7 +3,7 @@
 
 import { useEffect } from 'react';
 
-import { useBlogStats, useUpdateBlogStats } from 'hooks';
+import { useBlogStats, useUpdateBlogStats } from '@/hooks';
 
 import type { ViewCounterProps } from '@/types/components';
 
