@@ -1,4 +1,3 @@
-import Spotify from 'public/static/icons/spotify.svg';
 
 import { useNowPlaying } from '@/hooks';
 
@@ -9,7 +8,7 @@ const SpotifyNowPlaying = () => {
 
   return (
     <div className="my-3 flex max-w-[540px] items-center gap-2 rounded bg-gray-200 px-3 py-2 shadow-md dark:bg-[#24283b] dark:shadow-gray-800/40">
-      <Spotify className="w-6 flex-shrink-0 text-spotify" />
+      <img src="/static/icons/spotify.svg" alt="Spotify" className="w-6 flex-shrink-0 text-spotify" />
 
       <div className="inline-flex truncate">
         {songUrl ? (
