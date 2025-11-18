@@ -1,11 +1,10 @@
 import { clsx } from 'clsx';
 
-import TiltedGrid from 'public/static/icons/tilted-grid.svg';
 
 const TiltedGridBackground = ({ className }: { className?: string }) => {
   return (
     <div className={clsx(['absolute overflow-hidden [mask-image:linear-gradient(white,transparent)]', className])}>
-      <TiltedGrid
+      <img src="/static/icons/tilted-grid.svg" alt="Tilted Grid"
         className={clsx([
           'h-[160%] w-full',
           'absolute inset-x-0 inset-y-[-30%] skew-y-[-18deg]',
