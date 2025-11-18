@@ -6,7 +6,7 @@ import { formatDate } from 'pliny/utils/formatDate';
 import { CoreContent } from 'pliny/utils/contentlayer';
 import type { Blog } from 'contentlayer/generated';
 
-import tagData from 'app/tag-data.json';
+import tagData from '@/app/tag-data.json';
 import { Link, Tag } from '@/components/ui';
 import siteMetadata from '@/data/siteMetadata';
 
