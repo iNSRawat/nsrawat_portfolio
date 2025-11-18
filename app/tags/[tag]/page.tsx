@@ -4,9 +4,9 @@ import { slug } from 'github-slugger';
 import { allBlogs } from 'contentlayer/generated';
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
 
-import { ListLayout } from 'layouts';
-import tagData from 'app/tag-data.json';
-import { genPageMetadata } from 'app/seo';
+import { ListLayout } from '@/layouts';
+import tagData from '@/app/tag-data.json';
+import { genPageMetadata } from '@/app/seo';
 import siteMetadata from '@/data/siteMetadata';
 
 export async function generateMetadata(props: { params: Promise<{ tag: string }> }): Promise<Metadata> {
