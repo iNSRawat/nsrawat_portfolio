@@ -5,7 +5,7 @@ import NextImage from 'next/image';
 
 import type { ImageProps as NextImageProps } from 'next/image';
 
-import { useImageLoadedState } from 'hooks';
+import { useImageLoadedState } from '@/hooks';
 
 export interface ImageProps extends Omit<NextImageProps, 'src' | 'priority'> {
   src: string;
