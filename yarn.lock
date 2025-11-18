@@ -3713,6 +3713,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:^6.2.0":
+  version: 6.19.0
+  resolution: "@prisma/client@npm:6.19.0"
+  peerDependencies:
+    prisma: "*"
+    typescript: ">=5.1.0"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+    typescript:
+      optional: true
+  checksum: 6f65d6f0b0874e167ab08d19056bc7487aa3fa98647ca1ae08f377f93a37c9b2c1f98dc3f0dd1a0a016690da3778f02710a367176fd1903cfacbc02cf85011ec
+  languageName: node
+  linkType: hard
+
 "@protobufjs/aspromise@npm:^1.1.1, @protobufjs/aspromise@npm:^1.1.2":
   version: 1.1.2
   resolution: "@protobufjs/aspromise@npm:1.1.2"
@@ -4626,6 +4641,7 @@ __metadata:
     "@headlessui/react": 2.2.4
     "@next/bundle-analyzer": 15.3.3
     "@octokit/graphql": ^9.0.1
+    "@prisma/client": ^6.2.0
     "@svgr/webpack": ^8.1.0
     "@tailwindcss/forms": ^0.5.10
     "@tailwindcss/postcss": ^4.1.17
@@ -4655,6 +4671,7 @@ __metadata:
     js-yaml: ^4.1.0
     kbar: 0.1.0-beta.45
     lint-staged: ^16.1.0
+    lodash: ^4.17.21
     lucide-react: ^0.515.0
     mdast-util-to-string: ^4.0.0
     next: 15.4.7
@@ -8135,6 +8152,13 @@ __metadata:
   version: 4.3.1
   resolution: "lodash.upperfirst@npm:4.3.1"
   checksum: cadec6955900afe1928cc60cdc4923a79c2ef991e42665419cc81630ed9b4f952a1093b222e0141ab31cbc4dba549f97ec28ff67929d71e01861c97188a5fa83
+  languageName: node
+  linkType: hard
+
+"lodash@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
   languageName: node
   linkType: hard
 
