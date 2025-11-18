@@ -1,4 +1,4 @@
-import 'css/prism.css';
+import @/'css/prism.css';
 import 'katex/dist/katex.css';
 
 import { Metadata } from 'next';
@@ -10,7 +10,7 @@ import { sortPosts, coreContent, allCoreContent } from 'pliny/utils/contentlayer
 
 import { components } from '@/components/ui';
 import siteMetadata from '@/data/siteMetadata';
-import { PostSimple, PostLayout, PostBanner } from 'layouts';
+import { PostSimple, PostLayout, PostBanner } from @/'layouts';
 
 const defaultLayout = 'PostLayout';
 const layouts = {
