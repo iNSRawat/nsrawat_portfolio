@@ -1,7 +1,6 @@
 {
 	"name": "NSRawat",
 	"version": "2.3.0",
-	  "type": "module",
 	"scripts": {
 		"start": "PORT=3435 next dev",
 		"dev": "cross-env PORT=3434 next dev",
