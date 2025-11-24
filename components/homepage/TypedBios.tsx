@@ -23,11 +23,9 @@ const TypedBios = () => {
     <div>
       <ul id="bios" className="hidden">
         <li>
-          I'm aliased as <b className="font-medium">Karhdo</b> at work.
-        </li>
+              I'm aliased as <b className="font-medium">N S Rawat</b> at work.        </li>
         <li>
-          I live in <b className="font-medium">Ho Chi Minh, Viet Nam</b>.
-        </li>
+              I live in <b className="font-medium">Delhi NCR, India</b>.        </li>
         <li>
           I was born in the beautiful <b className="font-medium">Quang Ngai</b> city.
         </li>
@@ -55,8 +53,7 @@ const TypedBios = () => {
           I love listening <Twemoji emoji="musical-keyboard" /> and rap music.
         </li>
         <li>
-          I love playing video game <Twemoji emoji="video-game" />, LoL is my favorite one.
-        </li>
+              I love playing <b className="font-medium">cricket</b> & <b className="font-medium">traveling</b> <Twemoji emoji="cricket-game" /> <Twemoji emoji="airplane" />.        </li>
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
     </div>
