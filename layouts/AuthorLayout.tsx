@@ -60,7 +60,8 @@ export default function AuthorLayout({ children, content }: Props) {
               currently a freelance Data Scientist & ML Enthusiast at <strong>YouNet Media</strong>, deeply engaged in
               the <strong>EcomHeat</strong> project, which entails market share management, competitor research, and
               fostering e-commerce growth. I work mainly with <strong>Python</strong>, <strong>SQL</strong>,{' '}
-              <strong>TensorFlow</strong>, <strong>PyTorch</strong>, <strong>Scikit-learn</strong>, and <strong>NumPy</strong>.
+              <strong>TensorFlow</strong>, <strong>PyTorch</strong>, <strong>Scikit-learn</strong>, and{' '}
+              <strong>NumPy</strong>.
             </p>
             <h2>Why have this blog?</h2>
             <blockquote>
@@ -141,10 +142,10 @@ export default function AuthorLayout({ children, content }: Props) {
               </li>
               <li>
                 <Twemoji className="!mr-2" emoji="man-technologist" /> My website refers to the design and code from the{' '}
-              <a target="_blank" href="https://github.com/Karhdo/karhdo.dev">
-                Karhdo.dev
-              </a>{' '}
-              and{' '}
+                <a target="_blank" href="https://github.com/Karhdo/karhdo.dev">
+                  Karhdo.dev
+                </a>{' '}
+                and{' '}
                 <a target="_blank" href="https://github.com/hta218/leohuynh.dev">
                   lehuynh.dev
                 </a>{' '}
