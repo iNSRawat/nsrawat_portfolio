@@ -53,7 +53,7 @@ const Header = () => {
                       : 'hover:bg-gray-200 dark:hover:bg-primary-600'
                   )}
                 >
-                                    <GrowingUnderline
+                  <GrowingUnderline
                     className={clsx(pathname.startsWith(link.href) && 'bg-size-[100%_50%]')}
                     data-umami-event={`nav-${link.href.replace('/', '')}`}
                   >
