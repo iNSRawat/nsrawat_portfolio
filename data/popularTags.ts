@@ -1,8 +1,6 @@
-import { BrandIconType } from '@/components/ui/BrandIcon';
-
 type PopularTag = {
   href: string;
-  iconType: BrandIconType; // Must match your available icon keys
+  iconType: string;
   slug: string;
   title: string;
   bgColor: string;
@@ -14,63 +12,56 @@ const popularTags: PopularTag[] = [
     iconType: 'Python',
     slug: 'python',
     title: 'Python',
-    bgColor: 'bg-blue-600',
+    bgColor: '#3b82f6',
   },
   {
     href: '/tags/sql',
     iconType: 'SQL',
     slug: 'sql',
     title: 'SQL',
-    bgColor: 'bg-blue-500',
+    bgColor: '#2563eb',
   },
   {
     href: '/tags/matplotlib',
     iconType: 'Matplotlib',
     slug: 'matplotlib',
     title: 'matplotlib',
-    bgColor: 'bg-blue-500',
+    bgColor: '#1e40af',
   },
   {
     href: '/tags/numpy',
     iconType: 'NumPy',
     slug: 'numpy',
     title: 'NumPy',
-    bgColor: 'bg-blue-700',
+    bgColor: '#1e3a8a',
   },
   {
     href: '/tags/pandas',
     iconType: 'Pandas',
     slug: 'pandas',
     title: 'pandas',
-    bgColor: 'bg-purple-700',
+    bgColor: '#7e22ce',
   },
   {
     href: '/tags/seaborn',
     iconType: 'Seaborn',
     slug: 'seaborn',
     title: 'Seaborn',
-    bgColor: 'bg-blue-500',
+    bgColor: '#06b6d4',
   },
   {
     href: '/tags/plotly',
     iconType: 'Plotly',
     slug: 'plotly',
     title: 'Plotly',
-    bgColor: 'bg-blue-700',
+    bgColor: '#0891b2',
   },
   {
     href: '/tags/database',
     iconType: 'Mongodb',
     slug: 'database',
     title: 'Database',
-    bgColor: 'bg-green-600',
-  },
-  {
-    href: '/tags/devops',
-    iconType: 'Docker',
-    slug: 'devops',
-    title: 'Devops',
-    bgColor: 'bg-cyan-500',
+    bgColor: '#16a34a',
   },
 ];
 
