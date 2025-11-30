@@ -7,15 +7,6 @@ import popularTags from '@/data/popularTags';
 
 import Link from '@/components/ui/Link';
 
-const colorMap: Record<string, string> = {
-  'bg-blue-600': '#2563eb',
-  'bg-blue-500': '#3b82f6',
-  'bg-blue-700': '#1d4ed8',
-  'bg-purple-700': '#7e22ce',
-  'bg-green-600': '#16a34a',
-  'bg-cyan-500': '#06b6d4',
-};
-
 const iconMap: Record<string, string> = {
   'Python': '/static/icons/python.svg',
   'SQL': '/static/icons/sql.svg',
@@ -25,7 +16,6 @@ const iconMap: Record<string, string> = {
   'Seaborn': '/static/icons/seaborn.svg',
   'Plotly': '/static/icons/plotly.svg',
   'Mongodb': '/static/icons/mongodb.svg',
-  'Docker': '/static/icons/docker.svg',
 };
 
 const PopularTags = () => {
@@ -43,7 +33,6 @@ const PopularTags = () => {
       <div className="popular-tags grid grid-cols-1 gap-4 py-6 xl:grid-cols-6">
         {map(popularTags, (popularTag) => {
           const { slug, href, title, bgColor, iconType } = popularTag;
-          const bgHex = colorMap[bgColor] || '#000000';
           const iconPath = iconMap[iconType] || '/static/icons/python.svg';
 
           return (
@@ -51,7 +40,7 @@ const PopularTags = () => {
               key={slug}
               href={href}
               className="flex w-full justify-center space-x-2 rounded-lg p-3 transition-shadow hover:shadow-md"
-              style={{ backgroundColor: bgHex }}
+              style={{ backgroundColor: bgColor }}
             >
               <Image
                 src={iconPath}
