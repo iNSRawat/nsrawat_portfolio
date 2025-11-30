@@ -82,7 +82,7 @@ export default function AuthorLayout({ children, content }: Props) {
             <div className="flex items-center justify-between">
               <h2>My Career</h2>
 
-              <Button as="a" href="/static/resume.pdf" target="_blank">
+              <Button as="a" href="/static/Resume.pdf" target="_blank">
                 <span>Resume</span>
                 <Twemoji emoji="page-facing-up" />
               </Button>
