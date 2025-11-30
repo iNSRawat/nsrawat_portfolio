@@ -1,22 +1,11 @@
 'use client';
 
 import { map } from 'lodash';
-import Image from 'next/image';
 
 import popularTags from '@/data/popularTags';
 
 import Link from '@/components/ui/Link';
-
-const iconMap: Record<string, string> = {
-  Python: '/static/icons/python.svg',
-  SQL: '/static/icons/sql.svg',
-  Matplotlib: '/static/icons/matplotlib.svg',
-  NumPy: '/static/icons/numpy.svg',
-  Pandas: '/static/icons/pandas.svg',
-  Seaborn: '/static/icons/seaborn.svg',
-  Plotly: '/static/icons/plotly.svg',
-  Mongodb: '/static/icons/mongodb.svg',
-};
+import BrandIcon from '@/components/ui/BrandIcon';
 
 const PopularTags = () => {
   return (
@@ -30,19 +19,15 @@ const PopularTags = () => {
         </p>
       </div>
 
-      <div className="popular-tags grid grid-cols-1 gap-4 py-6 xl:grid-cols-6">
+      <div className="popular-tags grid grid-cols-3 gap-4 py-6 xl:grid-cols-6">
         {map(popularTags, (popularTag) => {
-          const { slug, href, title, bgColor, iconType } = popularTag;
-          const iconPath = iconMap[iconType] || '/static/icons/python.svg';
+          const { slug, iconType, href, title, bgColor } = popularTag;
+
+          const className = `${slug} flex w-[128px] justify-center space-x-2 rounded-lg p-3 transition-shadow hover:shadow-md`;
 
           return (
-            <Link
-              key={slug}
-              href={href}
-              className="flex w-full justify-center space-x-2 rounded-lg p-3 transition-shadow hover:shadow-md"
-              style={{ backgroundColor: bgColor }}
-            >
-              <Image src={iconPath} alt={title} width={24} height={24} className="h-6 w-6" />
+            <Link key={slug} href={href} className={className} style={{ backgroundColor: bgColor }}>
+              <BrandIcon type={iconType} className="h-6 w-6" />
               <div className="my-auto text-white">{title}</div>
             </Link>
           );
