@@ -50,7 +50,7 @@ const BrandIcon = (props: BrandIconProps) => {
   if (!iconPath) {
     return (
       <span
-        className={`inline-flex items-center justify-center bg-gray-200 rounded-full text-xs font-semibold ${className}`}
+        className={`inline-flex items-center justify-center rounded-full bg-gray-200 text-xs font-semibold ${className}`}
       >
         {type.charAt(0).toUpperCase()}
       </span>
