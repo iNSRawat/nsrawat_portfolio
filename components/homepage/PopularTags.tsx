@@ -42,13 +42,7 @@ const PopularTags = () => {
               className="flex w-full justify-center space-x-2 rounded-lg p-3 transition-shadow hover:shadow-md"
               style={{ backgroundColor: bgColor }}
             >
-              <Image
-                src={iconPath}
-                alt={title}
-                width={24}
-                height={24}
-                className="h-6 w-6"
-              />
+              <Image src={iconPath} alt={title} width={24} height={24} className="h-6 w-6" />
               <div className="my-auto text-white">{title}</div>
             </Link>
           );
