@@ -59,6 +59,7 @@ const BrandIcon = (props: BrandIconProps) => {
 
   return (
 <Image src={iconPath} alt={type} width={24} height={24} className={className} />
+    )
 };
 
 export default BrandIcon;
