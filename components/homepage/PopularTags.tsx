@@ -8,14 +8,14 @@ import popularTags from '@/data/popularTags';
 import Link from '@/components/ui/Link';
 
 const iconMap: Record<string, string> = {
-  'Python': '/static/icons/python.svg',
-  'SQL': '/static/icons/sql.svg',
-  'Matplotlib': '/static/icons/matplotlib.svg',
-  'NumPy': '/static/icons/numpy.svg',
-  'Pandas': '/static/icons/pandas.svg',
-  'Seaborn': '/static/icons/seaborn.svg',
-  'Plotly': '/static/icons/plotly.svg',
-  'Mongodb': '/static/icons/mongodb.svg',
+  Python: '/static/icons/python.svg',
+  SQL: '/static/icons/sql.svg',
+  Matplotlib: '/static/icons/matplotlib.svg',
+  NumPy: '/static/icons/numpy.svg',
+  Pandas: '/static/icons/pandas.svg',
+  Seaborn: '/static/icons/seaborn.svg',
+  Plotly: '/static/icons/plotly.svg',
+  Mongodb: '/static/icons/mongodb.svg',
 };
 
 const PopularTags = () => {
