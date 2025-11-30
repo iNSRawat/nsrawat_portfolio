@@ -43,12 +43,20 @@ const iconMap: { [key: string]: string } = {
   Umami: '/static/icons/umami.svg',
 };
 
-const BrandIcon = ({ type, className = 'w-6 h-6' }: BrandIconProps) => {
+const BrandIcon = ({
+  type,
+  className = 'w-6 h-6',
+}: BrandIconProps) => {
   const iconPath = iconMap[type];
+  const fallbackClasses =
+    'inline-flex items-center justify-center bg-gray-200 rounded-full text-xs font-semibold';
 
   if (!iconPath) {
+    const combinedClasses = className
+      ? fallbackClasses + ' ' + className
+      : fallbackClasses;
     return (
-      <span className={`inline-flex items-center justify-center bg-gray-200 rounded-full text-xs font-semibold ${className}`}>
+      <span className={combinedClasses}>
         {type.charAt(0).toUpperCase()}
       </span>
     );
