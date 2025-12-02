@@ -21,14 +21,14 @@ const popularTags: PopularTag[] = [
     iconType: 'SQL',
     slug: 'sql',
     title: 'SQL',
-    bgColor: 'bg-blue-500',
+    bgColor: 'bg-orange-600',
   },
   {
     href: '/tags/matplotlib',
     iconType: 'Matplotlib',
     slug: 'matplotlib',
     title: 'matplotlib',
-    bgColor: 'bg-blue-500',
+    bgColor: 'bg-indigo-600',
   },
   {
     href: '/tags/numpy',
@@ -49,28 +49,7 @@ const popularTags: PopularTag[] = [
     iconType: 'Seaborn',
     slug: 'seaborn',
     title: 'Seaborn',
-    bgColor: 'bg-blue-500',
-  },
-  {
-    href: '/tags/plotly',
-    iconType: 'Plotly',
-    slug: 'plotly',
-    title: 'Plotly',
-    bgColor: 'bg-blue-700',
-  },
-  {
-    href: '/tags/database',
-    iconType: 'Mongodb',
-    slug: 'database',
-    title: 'Database',
     bgColor: 'bg-green-600',
-  },
-  {
-    href: '/tags/devops',
-    iconType: 'Docker',
-    slug: 'devops',
-    title: 'Devops',
-    bgColor: 'bg-cyan-500',
   },
 ];
 
