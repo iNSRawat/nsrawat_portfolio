@@ -42,7 +42,7 @@ const projectsData: Project[] = [
     builtWith: ['Mathematics', 'Data Science', 'Machine Learning', 'Educational', 'Reference'],
   },
     {
-    type: 'self',
+    type: 'work',
     title: 'Supermarket Loyalty Prediction',
     description: 'DataCamp Data Scientist Associate Practical Exam project predicting customer spending in supermarket loyalty programs. Advanced feature engineering and predictive modeling with real-world retail data.',
     imgSrc: '/static/images/projects/supermarket-loyalty.png',
