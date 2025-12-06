@@ -27,6 +27,14 @@ const projectsData: Project[] = [
   },
   {
     type: 'self',
+    title: 'Personal Portfolio & Blog',
+    description: 'My personal portfolio and blog built with Next.js, Tailwind CSS, and Contentlayer. Features a clean, responsive design, dark mode support, and SEO optimization. A space to share my data science journey and projects.',
+    imgSrc: '/static/images/projects/NSRawat-blog.png',
+    url: 'https://nsrawat.vercel.app',
+    builtWith: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Contentlayer', 'Vercel'],
+  },
+  {
+    type: 'self',
     title: 'Zenith - AI Meditation & Chat',
     description: 'Full-stack web application combining AI-powered meditation guidance with intelligent chat capabilities. Built with modern web technologies for seamless user experience and real-time interactions.',
     imgSrc: '/static/images/projects/zenith-ai.png',
@@ -41,7 +49,7 @@ const projectsData: Project[] = [
     url: 'https://github.com/iNSRawat/Mathematics-Formulas-for-Data-Science-Machine-Learning',
     builtWith: ['Mathematics', 'Data Science', 'Machine Learning', 'Educational', 'Reference'],
   },
-    {
+  {
     type: 'work',
     title: 'Supermarket Loyalty Prediction',
     description: 'DataCamp Data Scientist Associate Practical Exam project predicting customer spending in supermarket loyalty programs. Advanced feature engineering and predictive modeling with real-world retail data.',
