@@ -1,7 +1,7 @@
 {
-  "machine-learning": 5,
+  "machine-learning": 6,
   "data-science": 4,
-  "python": 6,
+  "python": 7,
   "deep-learning": 3,
   "nlp": 2,
   "computer-vision": 2,
@@ -11,5 +11,12 @@
   "big-data": 1,
   "algorithms": 2,
   "database": 2,
-  "sql": 1
+  "sql": 1,
+  "pandas": 1,
+  "data-analysis": 1,
+  "numpy": 1,
+  "matplotlib": 1,
+  "scikit-learn": 1,
+  "model-deployment": 1,
+  "mlops": 1
 }
