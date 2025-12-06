@@ -17,17 +17,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           } flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 dark:border-gray-700 dark:bg-gray-800/50`}
       >
         {imgSrc && (
-          <div className="relative overflow-hidden">
+          <div className="relative aspect-video w-full overflow-hidden">
             <Zoom>
               <Image
                 alt={title}
                 src={imgSrc}
-                className="h-40 w-full object-cover object-center transition-transform duration-300 hover:scale-105 sm:h-44 md:h-48 lg:h-52"
+                className="h-full w-full object-cover object-center transition-transform duration-300 hover:scale-105"
                 width={1088}
                 height={612}
               />
             </Zoom>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
           </div>
         )}
 
