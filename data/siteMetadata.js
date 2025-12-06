@@ -12,7 +12,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/iNSRawat/nsrawat_portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/projects/nsrawat-datascience.png',
+  socialBanner: '/static/images/projects/NSRawat-blog.png',
   email: 'digital@nsrawat.in',
   github: 'https://github.com/iNSRawat',
   x: 'https://twitter.com/iNSRawat',
@@ -31,7 +31,8 @@ const siteMetadata = {
   },
   analytics: {
     umamiAnalytics: {
-      umamiWebsiteId: process.env.UMAMI_WEBSITE_ID,    },
+      umamiWebsiteId: process.env.UMAMI_WEBSITE_ID,
+    },
   },
   newsletter: {
     provider: 'buttondown',
