@@ -2,81 +2,75 @@ import TimelineItem from './TimelineItem';
 
 export const EXPERIENCES = [
   {
-    org: 'Younet Media',
-    url: 'https://younetmedia.com',
-    logo: '/static/images/experiences/younetmedia-logo.png',
-    start: 'Mar 2022',
+    org: 'iNSRawat.com',
+    url: 'https://www.nsrawat.in',
+    logo: '/static/images/experiences/insrawat-logo.png', // Placeholder, assuming user might add this later or it falls back
+    start: 'Apr 2023',
     end: 'Present',
-    title: 'Junior Software Engineer',
+    title: 'Freelance Marketing Specialist',
     icon: 'man-technologist',
-    event: 'career-younetmedia',
+    event: 'career-insrawat',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
-          <li>
-            Build{' '}
-            <a href="https://ecomheat.youneteci.com" rel="noopener noreferrer" target="_blank">
-              Ecomheat
-            </a>{' '}
-            - a website helps to measure the performance of the industry and players on E-Commerce platforms thru cross
-            E-commerce channels.
-          </li>
-          <li>
-            Build <strong>AppCore</strong> - Developed and published core NestJS packages, including DatabaseModule,
-            CacheModule, RedisModule, ConfigModule and others on npm to accelerate development and deployment across
-            multiple projects.
-          </li>
+          <li>Built data dashboards to analyze KPIs and optimize marketing performance.</li>
+          <li>Improved ROI by 25% using analytical insights and performance metrics.</li>
+          <li>Conducted consumer and sales data analysis to support strategic decision-making.</li>
         </ul>
       );
     },
   },
   {
-    org: 'QKIT Software',
-    url: 'https://qkit.vn',
-    logo: '/static/images/experiences/qkit-logo.png',
-    start: 'Jan 2021',
-    end: 'Dec 2022',
-    title: 'Fresher Backend Developer',
-    icon: 'man-technologist',
-    event: 'career-qkit',
-    details: () => {
-      return (
-        <ul className="[&>li]:my-2 [&>li]:pl-0">
-          <li>
-            <strong>Developed and maintained web applications</strong> for managing company website content, including
-            blogs, clients, and recruitment.
-          </li>
-          <li>
-            Implemented backend solutions using <strong> NestJS, PostgreSQL, and Prisma</strong>.
-          </li>
-          <li>
-            <strong>Participated in Agile methodologies </strong> to boost project efficiency and completion rates.
-          </li>
-        </ul>
-      );
-    },
-  },
-  {
-    org: 'University of Information Technology',
-    url: 'https://en.uit.edu.vn',
-    logo: '/static/images/experiences/uit-logo.png',
-    start: 'Aug 2019',
+    org: 'CarEager (VMG)',
+    url: 'https://careager.com',
+    logo: '/static/images/experiences/careager-logo.png', // Placeholder
+    start: 'Mar 2023',
     end: 'Jun 2023',
-    title: 'Student ad UIT - HCMC (School of Computer Science)',
+    title: 'Digital Marketing Associate',
     icon: 'man-technologist',
-    event: 'career-qkit',
+    event: 'career-careager',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
-          <li>
-            Get a good degree at <strong>School of Computer Science</strong>
-          </li>
-          <li>
-            While most of my friends pursued careers in <strong> Data or AI Engineering </strong>, I found my passion in{' '}
-            {''}
-            <strong>Software Engineering</strong> , particularly in web and app development. This decision has shaped
-            who I am today.
-          </li>
+          <li>Utilized data analytics to identify growth trends, increasing sales by 25%.</li>
+          <li>Created custom Excel and Google Analytics dashboards for management reporting.</li>
+        </ul>
+      );
+    },
+  },
+  {
+    org: 'Plants Kharido Pvt. Ltd.',
+    url: '#',
+    logo: '/static/images/experiences/plants-kharido-logo.png', // Placeholder
+    start: 'Mar 2022',
+    end: 'Mar 2023',
+    title: 'Digital Marketing Manager',
+    icon: 'man-technologist',
+    event: 'career-plants-kharido',
+    details: () => {
+      return (
+        <ul className="[&>li]:my-2 [&>li]:pl-0">
+          <li>Managed e-commerce analytics using Google Analytics for real-time data monitoring.</li>
+          <li>Conducted user funnel and behavioral analysis to optimize customer acquisition.</li>
+          <li>Achieved 6x ROI through data-driven advertising and budgeting.</li>
+        </ul>
+      );
+    },
+  },
+  {
+    org: 'Multiple Roles',
+    url: '#',
+    logo: '/static/images/experiences/multiple-roles-logo.png', // Placeholder
+    start: '2017',
+    end: '2021',
+    title: 'Digital Marketing Executive / Intern',
+    icon: 'man-technologist',
+    event: 'career-multiple-roles',
+    details: () => {
+      return (
+        <ul className="[&>li]:my-2 [&>li]:pl-0">
+          <li>Managed SEO, PPC, and analytics-driven campaigns for various clients.</li>
+          <li>Built reports and dashboards to track ROI, traffic, and engagement metrics.</li>
         </ul>
       );
     },
