@@ -7,8 +7,8 @@ const siteMetadata = {
     'Data Scientist specializing in Machine Learning, Deep Learning, Statistical Analysis, and Data Visualization. Transforming complex data into actionable insights using Python, TensorFlow, Scikit-learn, and modern analytics tools. Passionate about predictive modeling, business intelligence, and creating data-driven solutions.',
   language: 'en-us',
   theme: 'system',
-  siteUrl: 'https://nsrawat-ds.vercel.app',
-  analyticsURL: 'https://analytics.nsrawat-ds.vercel.app/share/7INnZc4Dv9KbGumx/nsrawat-ds.vercel.app',
+  siteUrl: 'https://www.nsrawat.in',
+  analyticsURL: 'https://cloud.umami.is/share/7INnZc4Dv9KbGumx',
   siteRepo: 'https://github.com/iNSRawat/nsrawat_portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
@@ -32,7 +32,7 @@ const siteMetadata = {
   analytics: {
     umamiAnalytics: {
       umamiWebsiteId: process.env.UMAMI_WEBSITE_ID,
-      umamiScriptSrc: 'https://analytics.nsrawat-ds.vercel.app/script.js',
+      umamiScriptSrc: 'https://cloud.umami.is/script.js',
     },
   },
   newsletter: {
