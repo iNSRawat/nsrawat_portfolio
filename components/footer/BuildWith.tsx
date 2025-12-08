@@ -4,25 +4,24 @@ import Link from '@/components/ui/Link';
 import BrandIcon from '@/components/ui/BrandIcon';
 
 const BuildWith = () => (
-  <div className="flex items-center space-x-1">
-    <span className="mr-1 text-gray-500 dark:text-gray-400">Build with</span>
+  <div className="flex items-center gap-2">
+    <span className="text-sm text-gray-500 dark:text-gray-400">Build with</span>
 
-    <div className="flex space-x-1.5">
-      <Link href="https://nextjs.org?ref=NSRawat">
-        <BrandIcon type="NextJS" className="h-5 w-5" />
+    <div className="flex items-center gap-1.5">
+      <Link href="https://nextjs.org?ref=NSRawat" className="flex items-center justify-center">
+        <BrandIcon type="NextJS" className="h-6 w-6 rounded-full" />
       </Link>
-      <Link href="https://tailwindcss.com?ref=NSRawat">
-        <BrandIcon type="TailwindCSS" className="h-5 w-5" />
+      <Link href="https://www.typescriptlang.org?ref=NSRawat" className="flex items-center justify-center">
+        <BrandIcon type="Typescript" className="h-6 w-6 rounded-full" />
       </Link>
-      <Link href="https://www.typescriptlang.org?ref=NSRawat">
-        <BrandIcon type="Typescript" className="h-5 w-5" />
-      </Link>
-      <Link href="https://umami.is?ref=NSRawat" className="pl-px">
-        <BrandIcon type="Umami" className="h-5 w-5" />
+      <Link href="https://tailwindcss.com?ref=NSRawat" className="flex items-center justify-center">
+        <BrandIcon type="TailwindCSS" className="h-6 w-6 rounded-full" />
       </Link>
     </div>
-    <span className="px-1 text-gray-400 dark:text-gray-500">-</span>
-    <Link href={siteMetadata.siteRepo} className="text-gray-500 underline underline-offset-4 dark:text-gray-400">
+    <Link
+      href={siteMetadata.siteRepo}
+      className="text-sm text-gray-500 underline underline-offset-4 dark:text-gray-400"
+    >
       <span data-umami-event="view-source">View source</span>
     </Link>
   </div>
