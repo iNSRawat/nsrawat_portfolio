@@ -6,7 +6,7 @@ const projectsData: Project[] = [
     title: 'Customer Behavior Prediction',
     description: 'Real-world data science project featuring customer behavior prediction with advanced machine learning algorithms. Complete dataset and implementation with end-to-end analysis pipeline.',
     imgSrc: '/static/images/projects/customer-behavior.png',
-    url: 'https://github.com/iNSRawat/data-science-analytics-projects',
+    url: 'https://github.com/iNSRawat/customer-behavior-prediction',
     builtWith: ['Python', 'Pandas', 'Scikit-learn', 'Data Analysis', 'ML'],
   },
   {
@@ -14,7 +14,7 @@ const projectsData: Project[] = [
     title: 'Data Cleaning & Visualization',
     description: 'Comprehensive data cleaning and visualization project demonstrating ETL pipelines, data quality assessment, and stunning visual insights. Perfect for understanding data preparation workflows.',
     imgSrc: '/static/images/projects/data-cleaning.png',
-    url: 'https://github.com/iNSRawat/data-science-analytics-projects',
+    url: 'https://github.com/iNSRawat/data_cleaning_visualization',
     builtWith: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Data Visualization'],
   },
   {
@@ -22,7 +22,7 @@ const projectsData: Project[] = [
     title: 'Marketing Analytics Dashboard',
     description: 'Interactive marketing analytics dashboard showcasing campaign performance, ROI analysis, and customer insights. Complete with real-world datasets and implementation examples.',
     imgSrc: '/static/images/projects/marketing-analytics.png',
-    url: 'https://github.com/iNSRawat/data-science-analytics-projects',
+    url: 'https://github.com/iNSRawat/marketing-analytics-dashboard',
     builtWith: ['Python', 'SQL', 'Analytics', 'Business Intelligence', 'Dashboard'],
   },
   {
@@ -30,7 +30,7 @@ const projectsData: Project[] = [
     title: 'Personal Portfolio & Blog',
     description: 'My personal portfolio and blog built with Next.js, Tailwind CSS, and Contentlayer. Features a clean, responsive design, dark mode support, and SEO optimization. A space to share my data science journey and projects.',
     imgSrc: '/static/images/projects/NSRawat-blog.png',
-    url: 'https://nsrawat.vercel.app',
+    url: 'https://nsrawat.in',
     builtWith: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Contentlayer', 'Vercel'],
   },
   {
