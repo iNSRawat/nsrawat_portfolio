@@ -7,5 +7,7 @@ export interface Project {
   imgSrc: string;
   url?: string;
   repo?: string | GithubRepository | null;
+  github?: string;
+  live?: string;
   builtWith: string[];
 }
