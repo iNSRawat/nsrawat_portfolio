@@ -9,7 +9,7 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/projects/customer-behavior.png',
     url: 'https://github.com/iNSRawat/customer-behavior-prediction',
     github: 'https://github.com/iNSRawat/customer-behavior-prediction',
-    live: 'https://github.com/iNSRawat/customer-behavior-prediction',
+    live: 'https://customer-behavior-prediction.streamlit.app',
     builtWith: ['Python', 'Pandas', 'Scikit-learn', 'Data Analysis', 'ML'],
   },
   {
@@ -20,7 +20,7 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/projects/data-cleaning.png',
     url: 'https://github.com/iNSRawat/google-analytics-data-cleaning-visualization',
     github: 'https://github.com/iNSRawat/google-analytics-data-cleaning-visualization',
-    live: 'https://github.com/iNSRawat/google-analytics-data-cleaning-visualization',
+    live: 'https://data-cleaning-visualization.streamlit.app',
     builtWith: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Data Visualization'],
   },
   {
@@ -31,7 +31,7 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/projects/marketing-analytics.png',
     url: 'https://github.com/iNSRawat/marketing-analytics-dashboard',
     github: 'https://github.com/iNSRawat/marketing-analytics-dashboard',
-    live: 'https://github.com/iNSRawat/marketing-analytics-dashboard',
+    live: 'https://marketing-analytics-dashboard.streamlit.app',
     builtWith: ['Python', 'SQL', 'Analytics', 'Business Intelligence', 'Dashboard'],
   },
   {
@@ -64,7 +64,7 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/projects/mathematics-formulas.png',
     url: 'https://github.com/iNSRawat/Mathematics-Formulas-for-Data-Science-Machine-Learning',
     github: 'https://github.com/iNSRawat/Mathematics-Formulas-for-Data-Science-Machine-Learning',
-    live: 'https://github.com/iNSRawat/Mathematics-Formulas-for-Data-Science-Machine-Learning',
+    live: 'https://insrawat.github.io/Mathematics-Formulas-for-Data-Science-Machine-Learning',
     builtWith: ['Mathematics', 'Data Science', 'Machine Learning', 'Educational', 'Reference'],
   },
   {
@@ -75,7 +75,7 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/projects/supermarket-loyalty.png',
     url: 'https://github.com/iNSRawat/supermarket-loyalty-prediction',
     github: 'https://github.com/iNSRawat/supermarket-loyalty-prediction',
-    live: 'https://github.com/iNSRawat/supermarket-loyalty-prediction',
+    live: 'https://www.datacamp.com/datalab/w/41248a93-d2cc-4447-be5f-74b80e0cebee/print-notebook/notebook.ipynb',
     builtWith: ['Python', 'Pandas', 'Scikit-learn', 'Feature Engineering', 'DataCamp'],
   },
 ];
