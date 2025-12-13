@@ -56,11 +56,10 @@ export default function AuthorLayout({ children, content }: Props) {
               Hello, folks! <Twemoji className="mx-2" emoji="waving-hand" /> I'm Nagendra Singh Rawat (aka NSRawat)
             </h2>
             <p>
-              I have a passion for <strong>Data Science and Machine Learning</strong> and data visualization. I'm
+              I have a passion for <strong>Data Science and AI/ML</strong> and data visualization. I'm
               currently a freelance/learner Data Scientist & ML Enthusiast at <strong>NSRawat</strong>, deeply engaged in
               transforming complex data into actionable insights, building predictive models, and deploying 
-              scalable ML solutions. project, which entails market share management, and
-              fostering e-commerce growth. I work mainly with <strong>Python</strong>, <strong>SQL</strong>,{' '}
+              scalable ML solutions. I work mainly with <strong>Python</strong>, <strong>SQL</strong>,{' '}
               <strong>TensorFlow</strong>, <strong>PyTorch</strong>, <strong>Scikit-learn</strong>, and{' '}
               <strong>NumPy</strong>.
             </p>
