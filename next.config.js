@@ -11,7 +11,7 @@ const ContentSecurityPolicy = `
   media-src *.s3.amazonaws.com;
   connect-src *;
   font-src 'self';
-  frame-src giscus.app *.github.io analytics.nsrawat.in
+  frame-src giscus.app *.github.io analytics.nsrawat.in;
 `;
 
 const securityHeaders = [
