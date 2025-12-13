@@ -27,28 +27,26 @@
 
 ## Tech Stack
 
-This portfolio showcases data science projects built with **Python**, **Machine Learning**, and **Data Visualization** tools, deployed on [Vercel](https://vercel.com/) using [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
+This blog is hosted on [Vercel](https://vercel.com/), built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) using **Tailwind Nextjs Starter Blog**.
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
-[![Scikit Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![MDX](https://img.shields.io/badge/MDX-1B1F24?style=for-the-badge&logo=mdx&logoColor=white)](https://mdxjs.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+This blog site takes inspiration from [lehuynh.dev](https://github.com/hta218/leohuynh.dev). I appreciate Leo Huynh and Timothy Lin for their contribution to this minimal, lightweight, and highly customizable blog starter.
 
 <br>
 
-This portfolio is inspired by modern data science practitioners and leverages best practices in machine learning model deployment and data visualization.
+### A few major over-engineering-changes from the original repo:
 
-Key features of this data science portfolio:
-
-- 📊 **Data Analysis**: Comprehensive exploratory data analysis with statistical insights
-- 🤖 **Machine Learning**: Predictive models using scikit-learn, TensorFlow, and PyTorch
-- 📈 **Data Visualization**: Interactive dashboards with Plotly, Matplotlib, and Seaborn
-- 💻 **End-to-End Projects**: From data collection to model deployment
-- 📥 **Notebook Integration**: Jupyter notebooks showcasing analysis workflows
+- ⚛️ Upgrading to **React 19**, **Next.js 16**
+- 🎉 Adopting **TypeScript**, committing with [Conventional Commits](https://www.conventionalcommits.org/)
+- 👀 Theming in dark mode with [Tokyonight Neovim Theme](https://github.com/folke/tokyonight.nvim) colors for better contrast.
+- 👨‍💻 My website refers to the design and code from the [Karhdo.dev](https://github.com/Karhdo/karhdo.dev) repository and incorporates the tailwind-nextjs-starter-blog template, version 1.0.
+- 📥 Bumping up `mdx-bundler`, `rehype`/`remark` plugins and dependencies to the latest version
 
 <br>
 
