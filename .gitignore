@@ -112,3 +112,7 @@ coverage/
 # Misc
 *.pem
 .eslintcache
+
+# Local convenience scripts (OS-specific development scripts)
+start-dev.ps1
+start-server.bat

@@ -78,6 +78,17 @@ const projectsData: Project[] = [
     live: 'https://www.datacamp.com/datalab/w/41248a93-d2cc-4447-be5f-74b80e0cebee/print-notebook/notebook.ipynb',
     builtWith: ['Python', 'Pandas', 'Scikit-learn', 'Feature Engineering', 'DataCamp'],
   },
+  {
+    type: 'work',
+    title: 'House Sale Price Prediction',
+    description:
+      'Data science project to predict house sale prices using real-world residential data, combining exploratory analysis and regression models to help real estate teams set smarter listing prices and improve sales performance.',
+    imgSrc: '/static/images/projects/house-price-prediction.png',
+    url: 'https://github.com/iNSRawat/predicting-house-sale-prices',
+    github: 'https://github.com/iNSRawat/predicting-house-sale-prices',
+    live: 'https://github.com/iNSRawat/predicting-house-sale-prices/blob/main/workspace/notebook.ipynb',
+    builtWith: ['Python', 'Pandas', 'Scikit-learn', 'Data Analysis', 'Regression Models'],
+  },
 ];
 
 export default projectsData;
