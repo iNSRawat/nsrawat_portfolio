@@ -1,10 +1,4 @@
 {
-  "database": 1,
-  "sql": 1,
-  "concurrency": 1,
-  "transactions": 1,
-  "data-integrity": 1,
-  "locking": 1,
   "machine-learning": 2,
   "algorithms": 1,
   "data-science": 1,
@@ -15,5 +9,11 @@
   "pandas": 1,
   "data-analysis": 1,
   "numpy": 1,
-  "matplotlib": 1
+  "matplotlib": 1,
+  "database": 1,
+  "sql": 1,
+  "concurrency": 1,
+  "transactions": 1,
+  "data-integrity": 1,
+  "locking": 1
 }
