@@ -6,10 +6,10 @@ import { notFound } from 'next/navigation';
 import { MDXLayoutRenderer } from 'pliny/mdx-components';
 import type { Snippet } from 'contentlayer/generated';
 import { allSnippets } from 'contentlayer/generated';
-import { coreContent, allCoreContent } from 'pliny/utils/contentlayer';
+import { allCoreContent } from 'pliny/utils/contentlayer';
 import { sortPosts } from 'pliny/utils/contentlayer';
 
-import { components } from '@/components/ui';
+import { components, Comments } from '@/components/ui';
 import siteMetadata from '@/data/siteMetadata';
 import Link from 'next/link';
 
@@ -59,7 +59,6 @@ export default async function SnippetPage(props: { params: Promise<{ slug: strin
   const prev = sortedCoreContents[snippetIndex + 1];
   const next = sortedCoreContents[snippetIndex - 1];
   const snippet = allSnippets.find((p) => p.slug === slug) as Snippet;
-  const mainContent = coreContent(snippet);
 
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -93,7 +92,7 @@ export default async function SnippetPage(props: { params: Promise<{ slug: strin
 
       {/* Content */}
       <div className="pb-8 pt-8">
-        <article className="prose max-w-none dark:prose-invert">
+        <article className="prose max-w-none dark:prose-dark">
           <MDXLayoutRenderer code={snippet.body.code} components={components} />
         </article>
       </div>
@@ -127,6 +126,13 @@ export default async function SnippetPage(props: { params: Promise<{ slug: strin
           ) : (
             <div />
           )}
+        </div>
+      )}
+
+      {/* Comments Section */}
+      {siteMetadata.comments && (
+        <div className="border-t border-gray-200 pb-6 pt-6 text-center text-gray-700 dark:border-gray-700 dark:text-gray-300" id="comment">
+          <Comments />
         </div>
       )}
     </div>
