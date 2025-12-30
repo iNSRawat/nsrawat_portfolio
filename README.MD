@@ -45,7 +45,7 @@ This blog site takes inspiration from [karhdo.dev](https://github.com/Karhdo/kar
 - ⚛️ Upgrad to **React 19**, **Next.js 16**
 - 🎉 Adopting **TypeScript**, committing with [Conventional Commits](https://www.conventionalcommits.org/)
 - 👀 Theming in dark mode with [Tokyonight Neovim Theme](https://github.com/folke/tokyonight.nvim) colors for better contrast.
-- 👨‍💻 My website refers to the design and code from the [Karhdo.dev](https://github.com/Karhdo/karhdo.dev) repository and incorporates the tailwind-nextjs-starter-blog template, version 1.0.
+- 👨‍💻 My website refers to the design and code from the [Karhdo.dev](https://github.com/Karhdo/karhdo.dev) & [lehuynh.dev](https://github.com/hta218/leohuynh.dev) repository and incorporates the tailwind-nextjs-starter-blog template, version 1.0.
 - 📥 Bumping up `mdx-bundler`, `rehype`/`remark` plugins and dependencies to the latest version
 
 <br>
