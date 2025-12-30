@@ -60,7 +60,7 @@ const ProfileCard = () => {
         style={style}
         className="overflow-hidden rounded shadow-lg shadow-slate-300 transition-all duration-200 ease-out dark:shadow-sky-700/50"
       >
-        <div className="relative h-64 sm:h-72 md:h-80 lg:h-96">
+        <div className="relative h-52 sm:h-60 md:h-64 lg:h-72">
           <Image
             src="/static/images/avatar.png"
             alt="avatar"

@@ -21,15 +21,16 @@ export default function Home({ posts }: HomeProps) {
         <div className="space-y-2 pb-8 pt-6 sm:space-y-5 sm:pb-12 sm:pt-10">
           <div className="space-y-8 lg:grid lg:grid-cols-12 lg:gap-8 lg:space-y-0">
             {/* Left Column - Text Content */}
-            <div className="lg:col-span-7">
+            <div className="flex flex-col lg:col-span-7">
               <Greeting />
-              <div className="mt-6 space-y-6">
+              <div className="mt-6 flex flex-1 flex-col space-y-6">
                 <div className="space-y-2">
                   <Heading />
                   <TypedBios />
                 </div>
                 <ShortDescription />
-                <div className="pt-6">
+                <div className="flex-1" />
+                <div>
                   <BlogLinks />
                 </div>
               </div>
