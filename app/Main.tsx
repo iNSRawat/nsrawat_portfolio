@@ -4,7 +4,15 @@ import type { CoreContent } from 'pliny/utils/contentlayer';
 import type { Blog } from 'contentlayer/generated';
 
 import { Link } from '@/components/ui';
-import { ProfileCard, Heading, Greeting, TypedBios, BlogLinks, ShortDescription } from '@/components/homepage';
+import {
+  ProfileCard,
+  Heading,
+  Greeting,
+  TypedBios,
+  BlogLinks,
+  ShortDescription,
+  PopularTags,
+} from '@/components/homepage';
 import BlogPostCard from '@/components/homepage/BlogPostCard';
 
 const MAX_DISPLAY = 5;
@@ -42,6 +50,11 @@ export default function Home({ posts }: HomeProps) {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Popular Tags Section */}
+      <section className="pt-6 pb-2 sm:pt-8 sm:pb-4">
+        <PopularTags />
       </section>
 
       {/* Recent Posts Section */}
