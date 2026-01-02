@@ -40,7 +40,7 @@ const MobileNav = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="h-6 w-6 text-green-400 hover:text-green-300"
+          className="h-6 w-6 text-zinc-700 hover:text-green-600 dark:text-green-400 dark:hover:text-green-300"
         >
           <path
             fillRule="evenodd"
@@ -75,7 +75,7 @@ const MobileNav = () => {
               leaveTo="translate-x-full opacity-0"
               unmount={false}
             >
-              <Dialog.Panel className="fixed left-0 top-0 z-70 h-full w-full transform bg-zinc-900 transition-transform duration-300 ease-in-out">
+              <Dialog.Panel className="fixed left-0 top-0 z-70 h-full w-full transform bg-white transition-transform duration-300 ease-in-out dark:bg-zinc-900">
                 <nav
                   ref={navRef}
                   className="mt-16 flex h-full basis-0 flex-col items-start overflow-y-auto pl-8 pt-4 text-left font-mono"
@@ -83,10 +83,10 @@ const MobileNav = () => {
                   {/* Home link */}
                   <Link
                     href="/"
-                    className="mb-4 py-2 text-xl text-green-400 hover:text-green-300"
+                    className="mb-4 py-2 text-xl font-bold text-green-600 hover:text-green-500 dark:text-green-400 dark:hover:text-green-300"
                     onClick={onToggleNav}
                   >
-                    <span className="text-zinc-500">://</span>home
+                    <span className="text-zinc-400 dark:text-zinc-500">://</span>home
                   </Link>
                   {headerNavLinks
                     .filter((link) => link.href !== '/')
@@ -94,17 +94,17 @@ const MobileNav = () => {
                       <Link
                         key={link.title}
                         href={link.href}
-                        className="mb-4 py-2 text-xl text-zinc-400 hover:text-green-400"
+                        className="mb-4 py-2 text-xl font-bold text-zinc-700 hover:text-green-600 dark:text-zinc-400 dark:hover:text-green-400"
                         onClick={onToggleNav}
                       >
-                        <span className="text-zinc-600">://</span>
+                        <span className="text-zinc-400 dark:text-zinc-600">://</span>
                         {link.title.toLowerCase()}
                       </Link>
                     ))}
                 </nav>
 
                 <button
-                  className="fixed right-4 top-4 z-80 p-3 text-green-400 hover:text-green-300"
+                  className="fixed right-4 top-4 z-80 p-3 text-zinc-700 hover:text-green-600 dark:text-green-400 dark:hover:text-green-300"
                   aria-label="Toggle Menu"
                   onClick={onToggleNav}
                 >
