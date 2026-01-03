@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/blog/introduction-to-machine-learning-algorithms":{},"/blog/mathematics-for-data-science":{},"/blog/machine-learning-workflow":{},"/blog/python-data-analysis-essentials":{},"/blog/how-to-prevent-overbooking-in-sql":{},"/snippets/model-evaluation":{},"/snippets/eda-template":{},"/snippets/sql-aggregation":{},"/snippets/matplotlib-template":{},"/snippets/sklearn-pipeline":{},"/snippets/pandas-cheatsheet":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/snippets/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/snippets/[slug]","routeRegex":"^\\/snippets\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"21f93f7ab13e5109ed26035f6c4f88ee","previewModeSigningKey":"bc5473b67d860849279c94b036f51ee0dd41f40f3c2414202ee1d83637f9040c","previewModeEncryptionKey":"bc5138b1073cff524a710c6f1ed24891c099f1e6ca244040af16dfd758c3be55"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "39e284af80acd1a96da1e690dc025879",
+    "previewModeSigningKey": "6da1452a4deadbaeb57fc3cbf9893564990dd8956be26254bb4b41f9c7584722",
+    "previewModeEncryptionKey": "026263127458bc4ce2e2368cd67ffec09ff6e12e2fa4cf5ec97a616721837fa3"
+  }
+}
