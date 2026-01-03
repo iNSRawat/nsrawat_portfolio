@@ -27,10 +27,10 @@ export const USER = {
     },
   ],
   about: `
-- **Data Scientist & ML Enthusiast** with a passion for transforming complex data into actionable insights.
+- I'm Nagendra Singh Rawat - a dedicated **Data Scientist & ML Enthusiast** with a passion for transforming complex data into actionable insights.
+- After 5 years in Digital Marketing, I began my Data Science journey in Sep 2025 to shift my career.
 - Skilled in **Python**, **SQL**, **TensorFlow**, **PyTorch**, **Scikit-learn**, and modern data science tools.
 - Building **predictive models**, **data pipelines**, and **interactive dashboards** with Tableau & Power BI.
-- After 5 years in Digital Marketing, I began my Data Science journey in Sep 2025 to shift my career.
 - Currently building skills in Python, machine learning, and data analysis for my new path.
 - Creator of data science projects on [GitHub](https://github.com/iNSRawat).
 - I have a passion for exploratory data analysis and finding patterns in data.
