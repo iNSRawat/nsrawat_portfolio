@@ -86,7 +86,8 @@ export default function ROCCurve() {
                 borderRadius: "8px",
               }}
               itemStyle={{ fontSize: "12px" }}
-              formatter={(value: number) =>
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              formatter={(value: any) =>
                 typeof value === "number" ? value.toFixed(3) : "0"
               }
             />
