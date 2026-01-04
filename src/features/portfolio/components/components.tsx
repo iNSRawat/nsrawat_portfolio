@@ -44,7 +44,7 @@ export function Components() {
           {dsComponents.map((comp) => (
             <Link
               key={comp.slug}
-              href={`/components`}
+              href={`/components/${comp.slug}`}
               className={cn(
                 "group/post flex items-center gap-4 p-4 transition-[background-color] ease-out hover:bg-accent2",
                 "max-sm:screen-line-before max-sm:screen-line-after",
