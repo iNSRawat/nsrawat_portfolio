@@ -142,7 +142,7 @@ export const EXPERIENCES: Experience[] = [
         id: "bachelor-science",
         title: "Bachelor of Science",
         employmentPeriod: {
-          start: "2017",
+          start: "2014",
           end: "2017",
         },
         icon: "education",
