@@ -71,7 +71,10 @@ export function TeckStack() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={tech.title}
-                          className="size-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+                          className="size-8 flex items-center justify-center transition-colors hover:opacity-80"
+                          style={{
+                            color: tech.color || "currentColor",
+                          }}
                         >
                           {IconComponent}
                         </a>

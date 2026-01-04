@@ -29,7 +29,7 @@ export function Components() {
     <Panel id="components">
       <PanelHeader>
         <PanelTitle>
-          DS Components
+          Components
           <PanelTitleSup>({dsComponents.length})</PanelTitleSup>
         </PanelTitle>
       </PanelHeader>
@@ -44,11 +44,11 @@ export function Components() {
           {dsComponents.map((comp) => (
             <Link
               key={comp.slug}
-              href={`/ds-components`}
+              href={`/components`}
               className={cn(
                 "group/post flex items-center gap-4 p-4 transition-[background-color] ease-out hover:bg-accent2",
                 "max-sm:screen-line-before max-sm:screen-line-after",
-                "sm:nth-[2n+1]:screen-line-before sm:nth-[2n+1]:screen-line-after"
+                "sm:nth-[2n+1]:screen-line-before sm:nth-[2n+1]:screen-line-after",
               )}
             >
               <div
@@ -71,7 +71,7 @@ export function Components() {
 
       <div className="screen-line-before flex justify-center py-2">
         <Button variant="default" asChild>
-          <Link href="/ds-components">
+          <Link href="/components">
             View All Components
             <ArrowRightIcon />
           </Link>

@@ -16,6 +16,8 @@ export type TechStack = {
   href: string;
   /** Category tags used for grouping/filtering. */
   categories: string[];
+  /** Brand color in hex format (e.g., "#3776AB") */
+  color?: string;
   /** If true, use theme-specific icons for dark/light mode. */
   theme?: boolean;
 };
