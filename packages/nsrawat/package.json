@@ -1,7 +1,7 @@
 {
-  "name": "ncdai",
+  "name": "nsrawat",
   "version": "0.0.3",
-  "description": "A simple CLI wrapper for adding components from chanhdai.com component registry using shadcn.",
+  "description": "A simple CLI wrapper for adding components from nsrawat.in component registry using shadcn.",
   "publishConfig": {
     "access": "public"
   },
@@ -24,23 +24,23 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ncdai",
+    "nsrawat",
     "cli",
     "shadcn",
     "components",
     "registry"
   ],
-  "author": "Nguyen Chanh Dai <dai@chanhdai.com>",
+  "author": "N.S. Rawat <contact@nsrawat.in>",
   "license": "MIT",
-  "homepage": "https://chanhdai.com",
+  "homepage": "https://nsrawat.in",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git",
-    "directory": "packages/ncdai"
+    "url": "git+https://github.com/nsrawat/nsrawat_portfolio.git",
+    "directory": "packages/nsrawat"
   },
-  "funding": "https://github.com/sponsors/ncdai",
+  "funding": "https://github.com/sponsors/nsrawat",
   "bugs": {
-    "url": "https://github.com/ncdai/chanhdai.com/issues"
+    "url": "https://github.com/nsrawat/nsrawat_portfolio/issues"
   },
   "devDependencies": {
     "tsup": "^8.5.0"

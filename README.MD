@@ -85,7 +85,7 @@ Extending sincere thanks for these exceptional resources 🙏
 
 ---
 
-<p align="center">Inspired by <a href="https://github.com/ncdai/chanhdai.com">ncdai/chanhdai.com</a></p>
+<p align="center">Inspired by <a href="https://github.com/ncdai/chanhdai.com">chanhdai.com</a></p>
 
 <br>
 
