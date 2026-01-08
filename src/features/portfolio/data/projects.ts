@@ -128,7 +128,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "2025",
     },
-    link: "https://github.com/iNSRawat/nsrawat_portfolio",
+    link: "https://github.com/iNSRawat/nsrawat",
     skills: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel", "MDX"],
     description: `My personal portfolio and blog built with Next.js and Tailwind CSS.
 - Features clean, responsive design with dark mode

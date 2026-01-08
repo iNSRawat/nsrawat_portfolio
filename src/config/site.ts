@@ -38,9 +38,8 @@ export const MAIN_NAV: NavItem[] = [
 ];
 
 export const GITHUB_USERNAME = "iNSRawat";
-export const SOURCE_CODE_GITHUB_REPO = "iNSRawat/nsrawat_portfolio";
-export const SOURCE_CODE_GITHUB_URL =
-  "https://github.com/iNSRawat/nsrawat_portfolio";
+export const SOURCE_CODE_GITHUB_REPO = "iNSRawat/nsrawat";
+export const SOURCE_CODE_GITHUB_URL = "https://github.com/iNSRawat/nsrawat";
 
 export const SPONSORSHIP_URL = "https://github.com/sponsors/iNSRawat";
 
