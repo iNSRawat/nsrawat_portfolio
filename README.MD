@@ -36,7 +36,7 @@ This portfolio is hosted on [Vercel](https://vercel.com/), built with [Next.js](
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-This blog site takes inspiration from [chanhdai.com](https://github.com/ncdai/chanhdai.com). I appreciate Nguyen Chanh Dai for their contribution to this minimal, lightweight, and highly customizable blog starter.
+This blog site takes inspiration from [chanhdai.com](https://github.com/ncdai/chanhdai.com). I appreciate Nguyen Chanh Dai for their contribution to this minimal, lightweight, and highly customizable [shadcn/ui](https://ui.shadcn.com/).
 
 <br>
 
@@ -45,7 +45,7 @@ This blog site takes inspiration from [chanhdai.com](https://github.com/ncdai/ch
 - ⚛️ Upgrade to **React 19**, **Next.js 16**
 - 🎉 Adopting **TypeScript**, committing with [Conventional Commits](https://www.conventionalcommits.org/)
 - 👀 Theming in dark mode with [Tokyonight Neovim Theme](https://github.com/folke/tokyonight.nvim) colors for better contrast.
-- 👨‍💻 My website refers to the design and code from the [chanhdai.com](https://github.com/ncdai/chanhdai.com) repository and incorporates the tailwind-nextjs-starter-blog template, version 1.0.
+- 👨‍💻 My website refers to the design and code from the [chanhdai.com](https://github.com/ncdai/chanhdai.com) repository and incorporates [shadcn/ui](https://ui.shadcn.com/).
 - 📥 Bumping up `mdx-bundler`, `rehype`/`remark` plugins and dependencies to the latest version
 
 <br>

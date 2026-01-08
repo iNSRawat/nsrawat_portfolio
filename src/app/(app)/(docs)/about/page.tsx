@@ -235,7 +235,16 @@ export default function AboutPage() {
               Nguyen Chanh Dai
             </a>{" "}
             for their contribution to this minimal, lightweight, and highly
-            customizable blog starter.
+            customizable{" "}
+            <a
+              href="https://ui.shadcn.com/"
+              className="link font-medium"
+              target="_blank"
+              rel="noopener"
+            >
+              shadcn/ui
+            </a>
+            .
           </p>
 
           <div className="mt-4">
@@ -291,8 +300,16 @@ export default function AboutPage() {
                   >
                     chanhdai.com
                   </a>{" "}
-                  repository and incorporates the tailwind-nextjs-starter-blog
-                  template, version 1.0.
+                  repository and incorporates{" "}
+                  <a
+                    href="https://ui.shadcn.com/"
+                    className="link font-medium"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    shadcn/ui
+                  </a>
+                  .
                 </span>
               </li>
               <li className="flex items-start gap-2">
