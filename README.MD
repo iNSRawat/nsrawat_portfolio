@@ -39,7 +39,7 @@ This portfolio is hosted on [Vercel](https://vercel.com/), built with [Next.js](
 [![Umami](https://img.shields.io/badge/Umami-000000?style=for-the-badge&logo=umami&logoColor=white)](https://umami.is/)
 [![c15t](https://img.shields.io/badge/c15t-000000?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRleHQgeD0iNSIgeT0iMjAiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5jPC90ZXh0Pjwvc3ZnPg==)](https://c15t.io/)
 
-This blog site takes inspiration from [chanhdai.com](https://github.com/ncdai/chanhdai.com). I appreciate Nguyen Chanh Dai for their contribution to this minimal, lightweight, and highly customizable [shadcn/ui](https://ui.shadcn.com/).
+This portfolio site takes inspiration from [chanhdai.com](https://github.com/ncdai/chanhdai.com). I appreciate Nguyen Chanh Dai for their contribution to this minimal, lightweight, and highly customizable [shadcn/ui](https://ui.shadcn.com/).
 
 <br>
 
